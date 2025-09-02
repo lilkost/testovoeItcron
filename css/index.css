@@ -19,6 +19,7 @@
 body {
     color: var(--color-text);
     font-family: var(--ff-text);
+    background: #131212;
 }
 
 .header{
@@ -137,4 +138,5 @@ body {
 
 .social__link svg {
     width: calc(var(--index) * 4.609);
+
 }
