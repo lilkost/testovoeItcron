@@ -41,7 +41,5 @@
     .social__link svg {
         width: calc(var(--index) * 3);
     }
-    .top__inner{
-        height: calc(100svh + 1px);
-    }
+
 }
