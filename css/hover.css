@@ -1,0 +1,20 @@
+@media (hover: hover) {
+    .nav__link:hover {
+        color: var(--color-accent);
+    }
+    .social__link:hover svg path{
+        fill: var(--color-accent);
+    }
+    .header__burger:hover {
+        transform: rotate(360deg);
+    }
+}
+
+@media not (hover: hover) {
+    .nav__link:active {
+        color: var(--color-accent);
+    }
+    .social__link:active svg path {
+        fill: var(--color-accent);
+    }
+}

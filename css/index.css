@@ -1,0 +1,140 @@
+@import "reset.css";
+@import "fonts.css";
+@import "hover.css";
+
+
+:root{
+    --color-text: #FFFFFF;
+    --color-accent: #FB6542;
+
+    --ff-text: 'Geometria';
+    --ff-title: 'Gotham Pro';
+
+    --trans: 300ms linear;
+
+    --index: calc(1vw + 1vh);
+}
+
+
+body {
+    color: var(--color-text);
+    font-family: var(--ff-text);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding-top: calc(var(--index) * 2.7);
+}
+
+.container {
+    --container-margin-left: 14.583vw;
+    --container-margin-right: 5.208vw;
+    --padding-inline: 20px;
+
+    max-width: calc(
+        100vw - var(--container-margin-left) - var(--container-margin-right)
+    );
+    width: 100%;
+    margin-left: auto;
+    margin-right: var(--container-margin-right);
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.823vw;
+}
+
+.nav__item{
+    font-weight: 400;
+    font-size: calc(var(--index) * 0.8);
+    line-height: 120%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    color: currentColor;
+    transition: color var(--trans);
+}
+
+.header__burger{
+    transform: rotate(0deg);
+    transition: transform 2000ms linear;
+}
+
+.header__burger svg{
+    width: calc(var(--index) * 1.667);
+}
+
+.top{
+    max-width: 100%;
+    width: 100%;
+    height: max-content;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+
+    min-height: 100svh;
+
+    padding-bottom: 2.865vw;
+}
+
+.top__info{
+    margin-top: auto;
+    margin-bottom: calc(var(--index) * 4.9);
+    margin-right: calc(var(--index) * 4);
+}
+
+.top__title{
+    font-family: var(--ff-title);
+    font-weight: 900;
+    font-size: calc(var(--index) * 6.6);
+    line-height: 100%;
+    letter-spacing: 0.02em;
+}
+
+.top__description{
+    font-weight: 500;
+    font-size: 2.500vw;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+
+    padding-left: calc(var(--index) * 0.44);
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.667vw;
+}
+
+.social__link svg path {
+    transition: fill var(--trans);
+}
+
+.social__link svg {
+    width: calc(var(--index) * 4.609);
+}
